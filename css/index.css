@@ -1078,7 +1078,7 @@ padding-bottom: 40px;
 }
 .contact-info{
     width: 40%;
-    height: 500px;
+    height: 700px;
     background: url(../images/contact-back.jpg);
     background-position: center;
     background-size: cover;
@@ -1343,6 +1343,9 @@ form button:hover{
 }
 .color-selector li{
   list-style: none;
+}
+.contact-info a{
+    text-decoration: none;
 }
 
 /*
@@ -1664,7 +1667,7 @@ For devices with smaller width like mobile phone
             }
             .contact-info{
                 width: 90%;
-                height: 500px;
+                height: 700px;
                 background-position: center;
                 background-size: cover;
                 border-radius: 16px;
@@ -2136,7 +2139,7 @@ for tabs and large phones
             }
             .contact-info{
                 width: 70%;
-                height: 500px;
+                height: 700px;
                 background-position: center;
                 background-size: cover;
                 border-radius: 16px;
@@ -2464,7 +2467,7 @@ for tabs and large phones
     }
     .contact-info{
         width: 40%;
-        height: 600px;
+        height: 800px;
         background-position: center;
         background-size: cover;
         border-radius: 16px;

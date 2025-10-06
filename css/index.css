@@ -484,6 +484,9 @@ body{
     font-size: 18px;
     font-weight: 200;
 }
+.about-second-line .color{
+    font-size: inherit;
+}
 .about-main{
     display: flex;
     align-items: center;

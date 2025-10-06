@@ -1,17 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="George Aykara's portofolio website." />
-	<meta name="keywords" content="george aykara, aykara4, george s aykara, software developer, software engineer, technology" />
-	<meta name="author" content="George Aykara" />
-    <title>George Aykara - Personal Portfolio Website</title>
-  <!--favicon-img--> 
-   <link rel="icon" type="image/png" href="images/favicon.png">
-   <!--favicon-img-->
-   <!--main css file should not be removed -->
+    <meta name="description" content="George Aykara - Software Engineer & Consultant specializing in web development, cloud services, and technical consultation. 10+ years of experience in building scalable solutions." />
+    <meta name="keywords" content="george aykara, aykara4, george s aykara, software developer, software engineer, technology, web development, cloud services, AWS, Java, Python, Spring Boot" />
+    <meta name="author" content="George Aykara" />
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="George Aykara - Software Engineer & Consultant" />
+    <meta property="og:description" content="Experienced software engineer specializing in web development, cloud services, and technical consultation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://georgeaykara.com" />
+    <meta property="og:image" content="images/man.JPG" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@GeorgeAykara" />
+    <meta name="twitter:title" content="George Aykara - Software Engineer & Consultant" />
+    <meta name="twitter:description" content="Experienced software engineer specializing in web development, cloud services, and technical consultation." />
+    
+    <title>George Aykara - Software Engineer & Consultant | Portfolio</title>
+    
+    <!--favicon-img--> 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <!--favicon-img-->
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
@@ -37,26 +57,25 @@
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
             <div class="logo">
-                <img src="images/thumbnail.png" alt="logo">
+                <img src="images/thumbnail.png" alt="George Aykara Logo">
             </div>
             <div class="navigation-close">
                 <span class="close-first"></span>
                 <span class="close-second"></span>
             </div>
-            <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" >HOME</a>
-                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
-                <!-- <a href="#" data-text="BLOG" id="blog-link" >BLOG</a> -->
-                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
-                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
-            </div>
+            <nav class="navigation-links" role="navigation" aria-label="Main navigation">
+                <a href="#" data-text="HOME" id="home-link" aria-label="Navigate to Home">HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" aria-label="Navigate to About">ABOUT</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link" aria-label="Navigate to Portfolio">PORTFOLIO</a>
+                <a href="#" data-text="CONTACT" id="contact-link" aria-label="Navigate to Contact">CONTACT</a>
+            </nav>
         </div>
         <!--Navigator-Fullscreen END-->
           <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
-            <img src="images/thumbnail.png" alt="logo">
-            <div class="menubar">
+            <img src="images/thumbnail.png" alt="George Aykara Logo">
+            <div class="menubar" role="button" aria-label="Open navigation menu" tabindex="0">
                 <span class="first-span"></span>
                 <span class="second-span"></span>
                 <span class="third-span"></span>
@@ -64,67 +83,71 @@
         </div>
         <!--Menubar End-->
           <!--Header-->
-        <div id="header">
+        <header id="header">
             <div id="particles"></div>
               <!--Social Media Links-->
             <div class="social-media-links">
-                <a href="https://www.linkedin.com/in/george-aykara/"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                <a href="https://twitter.com/GeorgeAykara"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
-                <a href="https://www.instagram.com/georgeaykara/"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a>
-                <!-- <a href="https://youtube.com/@aykarageorge"><img src="images/facebook logo.png" class="social-media" alt="youtube-logo"></a> -->
-
+                <a href="https://www.linkedin.com/in/george-aykara/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <img src="images/linkedin logo.png" class="social-media" alt="LinkedIn">
+                </a>
+                <a href="https://twitter.com/GeorgeAykara" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                    <img src="images/twitter logo.png" class="social-media" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com/georgeaykara/" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                    <img src="images/instagram logo.png" class="social-media" alt="Instagram">
+                </a>
             </div>
             <!--Social Media Links end-->
             <div class="header-content">
                 <div class="header-content-box">
-                <div class="firstline"><span class="color">George </span>Aykara</div>
+                <h1 class="firstline"><span class="color">George </span>Aykara</h1>
                 <div class="secondline">
-                I'm a Software
-            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Consultant.", " Engineer.", " Developer.", " Programmer." ]'></span>
+                I'm a <span class="profession-title">Software</span>
+            <span class="txt-rotate color" data-period="1200" data-rotate='[ " Consultant.", " Engineer.", " Developer.", " Architect." ]'></span>
             <span class="slash">|</span>
         </div>
                     <div class="contact">
-                <a href="Mailto:george.aykara@outlook.com"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
-                <a href="Tel:918547571854"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                <a href="mailto:george.aykara@outlook.com" aria-label="Send Email"><img src="images/mail.png" alt="Email" class="contactpic"></a>
+                <a href="tel:+918547571854" aria-label="Call Phone"><img src="images/call.png" alt="Phone" class="contactpic"></a>
                     </div>    
             </div>
             </div>
             <!--header image-->
             <div class="header-image">
-            <img src="images/man.JPG" alt="logo">
+            <img src="images/man.JPG" alt="George Aykara - Software Engineer">
             </div>
             <!--header image end-->
-        </div>
+        </header>
            <!--Header End-->
         <!--HomePage End-->
         <!--Main-Section End-->
         <!--about-->
-        <div id="about">
+        <section id="about">
             <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
+            <div class="color-panel" role="button" aria-label="Open color options" tabindex="0">
+                <img src="images/gear.png" alt="Settings">
             </div>
             <div class="color-selector">
                 <div class="heading">Custom Colors</div>
                 <div class="colors">
-                    <ul >
+                    <ul>
                     <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
+                        <a href="#0" class="color-red" title="color-red" aria-label="Red theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
+                        <a href="#0" class="color-purple" title="color-purple" aria-label="Purple theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
+                        <a href="#0" class="color-malt" title="color-malt" aria-label="Malt theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
+                        <a href="#0" class="color-green" title="color-green" aria-label="Green theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
+                        <a href="#0" class="color-blue" title="color-blue" aria-label="Blue theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
+                        <a href="#0" class="color-orange" title="color-orange" aria-label="Orange theme"></a>
                     </li>
                     </ul>
                 </div>
@@ -133,56 +156,54 @@
             <!--about content-->
             <div id="about-content">
                 <div class="about-header">
-                    About <span class="color">Me</span>
-                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
+                    <h2>About <span class="color">Me</span></h2>
+                    <span class="header-caption">Get to Know <span class="color">me.</span></span>
                 </div>
                 <div class="about-main">
             <div class="about-first-paragraph wow">
             <!--about description-->
                 <span class="about-first-line">
-                    I'm creative 
-                    <span class="color">web developer</span>
+                    I'm a creative 
+                    <span class="color">software engineer</span>
                 </span>
                 <br>
-                <span class="about-second-line"> With 10 years of experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step while working.</span>
-                <!-- <div class="cv">
-                <a href="#"><button>Download <span class="colors">CV</span></button></a>
-                </div> -->
+                <span class="about-second-line">With over a decade of hands-on experience in software development, I bring deep <span class="color">technical expertise</span> and a proven track record of delivering <span class="color">robust, scalable solutions</span>. My core strengths lie in architecting <span class="color">high-performance web applications</span>, designing <span class="color">resilient cloud infrastructure</span>, and offering <span class="color">strategic technical consulting</span> to help businesses navigate and grow in an increasingly digital world.</span>
+                <span class="about-second-line">Whether you're building a new product, scaling an existing platform, or seeking guidance on technical strategy, I’m here to help turn your vision into reality.</span>
             </div>
             <!--about picture-->
             <div class="about-img">
-                <img src="images/about.jpg" alt="Your Image">
+                <img src="images/about.jpg" alt="George Aykara Profile">
             </div>
             </div>
     
             </div>
             <!--services start-->
-            <div id="services">
+            <section id="services">
                 <div class="color-changer">
-                    <div class="color-panel">
-                        <img src="images/gear.png" alt="">
+                    <div class="color-panel" role="button" aria-label="Open color options" tabindex="0">
+                        <img src="images/gear.png" alt="Settings">
                     </div>
                     <div class="color-selector">
                         <div class="heading">Custom Colors</div>
                         <div class="colors">
-                            <ul >
+                            <ul>
                             <li>
-                                <a href="#0" class="color-red " title="color-red"></a>
+                                <a href="#0" class="color-red" title="color-red" aria-label="Red theme"></a>
                             </li>
                             <li>
-                                <a href="#0" class="color-purple" title="color-purple"></a>
+                                <a href="#0" class="color-purple" title="color-purple" aria-label="Purple theme"></a>
                             </li>
                             <li>
-                                <a href="#0" class="color-malt" title="color-malt"></a>
+                                <a href="#0" class="color-malt" title="color-malt" aria-label="Malt theme"></a>
                             </li>
                             <li>
-                                <a href="#0" class="color-green" title="color-green"></a>
+                                <a href="#0" class="color-green" title="color-green" aria-label="Green theme"></a>
                             </li>
                             <li>
-                                <a href="#0" class="color-blue" title="color-blue"></a>
+                                <a href="#0" class="color-blue" title="color-blue" aria-label="Blue theme"></a>
                             </li>
                             <li>
-                                <a href="#0" class="color-orange" title="color-orange"></a>
+                                <a href="#0" class="color-orange" title="color-orange" aria-label="Orange theme"></a>
                             </li>
                             </ul>
                         </div>
@@ -190,76 +211,67 @@
                     </div>
             <!--services header-->
                     <div class="services-heading wow">
-                        <span class="color">My</span> Services
+                        <h2><span class="color">My</span> Services</h2>
                     </div>
             <!--services header end-->
             <!--services content-->
                     <div class="services-content">
-                           <div class="service-one service wow">
+                           <article class="service-one service wow">
                                <div class="service-img">
-                               <img src="images/coding.png" alt="service-one">
+                               <img src="images/coding.png" alt="Web Development Service">
                                </div>
                                <div class="service-description">
-                                <h2>Web Development</h2>
-                                <p>Services to develop custom web applications. This includes designing and building the website UI, server-side architecture, database integration, and API development.</p>
+                                <h3>Web Development</h3>
+                                <p>Full-stack development services to build custom web applications. This includes designing intuitive UIs, robust server-side architecture, database integration, and RESTful API development.</p>
                                </div>
-                           </div>
-                           <div class="service-two service wow">
+                           </article>
+                           <article class="service-two service wow">
                                <div class="service-img">
-                               <img src="images/instagram.png" alt="service-two">
+                               <img src="images/instagram.png" alt="Cloud Services">
                                </div>
                                <div class="service-description">
-                                <h2>Cloud Services</h2>
-                                <p>Assistance in setting up and configuring cloud infrastructure using platforms like AWS.</p>
+                                <h3>Cloud Services</h3>
+                                <p>Expert assistance in designing, deploying, and managing cloud infrastructure using AWS. Specializing in serverless architectures, containerization, and cost optimization strategies.</p>
                                </div>
-                           </div>
-                           <div class="service-three service wow">
+                           </article>
+                           <article class="service-three service wow">
                             <div class="service-img">
-                               <img src="images/bulb.png" alt="service-three">
+                               <img src="images/bulb.png" alt="Technical Consultation">
                             </div>
                             <div class="service-description">
-                                <h2>Tech Consultation</h2>
-                                <p>Provide technical consulting and guidance on cost effective Software implemention for businesses, technology selection, and scalability.</p>
+                                <h3>Tech Consultation</h3>
+                                <p>Strategic technical consulting and guidance on cost-effective software implementation, technology stack selection, system architecture design, and scalability planning for businesses.</p>
                             </div>
-                        </div>
+                        </article>
                     </div>
-            </div>
+            </section>
             <!--services content end-->
             <!--services end-->
-            <div id="skills">
+            <section id="skills">
                 <div class="skills-header">
-                     My <span class="color"> Skills</span>
+                     <h2>My <span class="color">Skills</span></h2>
                 </div>
-                <div class="skills-content " style="text-align: center;">
+                <div class="skills-content" style="text-align: center;">
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                                Web Development
+                                Full-Stack Web Development
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="html-progress wow">95%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                            Java, Spring Boot
+                            Java, Spring Boot, Microservices
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                            Python, Scripting
+                            Python, Automation & Scripting
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
@@ -267,39 +279,27 @@
                                 Amazon Web Services (AWS)
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="adobe-progress wow">83%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                                SQL & NoSQL Databases (PostgreSQL, MySQL, Redis)
+                                Databases (PostgreSQL, MySQL, MongoDB, Redis)
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="php-progress wow">87%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                                Microservices, Containerization (Docker)
+                                Docker, Kubernetes & CI/CD
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="jquery-progress wow">94%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                            System Design
+                            System Architecture & Design
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
@@ -307,19 +307,13 @@
                             Serverless Application Development
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                            Messaging Brokers - Kafka, RabbitMQ
+                            Message Queuing - Kafka, RabbitMQ
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
@@ -327,326 +321,192 @@
                             Software Development Consultation
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                                Android Development (Kotlin, Flutter)
+                                Mobile Development (Kotlin, Flutter)
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="seo-progress wow">84%</div>
-                        </div> -->
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                             <div class="html">
-                            Wordpress Development
+                            WordPress & CMS Development
                             </div>
                         </div>
-                        <!-- <div class="html-prog wow prog">
-                            <div class="js-progress wow">90%</div>
-                        </div> -->
                     </div>
                 </div>
-            </div>
-            <div class="footer">
-             <div class="footer-text">
-                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> George Aykara
-             </div>
-            </div>
+            </section>
     <!--copyright-section-->
-        </div>
+        </section>
         <!--about end-->
         <!--portfolio-->
-        <div id="portfolio">
+        <section id="portfolio">
             <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
+                <div class="color-panel" role="button" aria-label="Open color options" tabindex="0">
+                    <img src="images/gear.png" alt="Settings">
                 </div>
                 <div class="color-selector">
                     <div class="heading">Custom Colors</div>
                     <div class="colors">
-                        <ul >
+                        <ul>
                         <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
+                            <a href="#0" class="color-red" title="color-red" aria-label="Red theme"></a>
                         </li>
                         <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
+                            <a href="#0" class="color-purple" title="color-purple" aria-label="Purple theme"></a>
                         </li>
                         <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
+                            <a href="#0" class="color-malt" title="color-malt" aria-label="Malt theme"></a>
                         </li>
                         <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
+                            <a href="#0" class="color-green" title="color-green" aria-label="Green theme"></a>
                         </li>
                         <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
+                            <a href="#0" class="color-blue" title="color-blue" aria-label="Blue theme"></a>
                         </li>
                         <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
+                            <a href="#0" class="color-orange" title="color-orange" aria-label="Orange theme"></a>
                         </li>
                         </ul>
                     </div>
                 </div>
                 </div>
-            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
-            <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+            <div class="portfolio-header">
+                <h2><span class="color">My</span> Portfolio</h2>
+                <span class="header-caption">Some Of My <span class="color">Works</span></span>
+            </div>
              <div id="portfolio-content">
 
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/portfolio-first.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>Safer</h2>
-                         <p>An app built during the pandemic for small shop owners to track customer footprint. As per Govt. regulation, instead of using book and pen for collecting customer name and phone number, built an app that could track footprint across multiple shops, and user had to scan QR code to mark their footprint. This provided much safer approach by not having to touch the pen and paper by multiple people.</p>
-                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-
-                 <div class="portfolio portfolio-second">
+                <div class="portfolio portfolio-first">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-second.jpg" alt="portfolio-second">
+                        <img src="images/portfolio-first.jpg" alt="STB Robo Website" loading="lazy">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Heritage Planet</h2>
-                        <p>An e-commerece website to see antiques and home decors.</p>
-                        <div class="button"><a href="http://heritageplanet.com"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-             
-                <div class="portfolio portfolio-third">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="portfolio-third">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Vehicle Pollution Reminder</h2>
-                        <p>This app is intended for the Vehicle Pollution Test center owners. The user can input their customer's Vehicle Number and contact detail when the customer comes for their vehicle's pollution check. When the pollution check expires for the customer, the app will remind the center to inform their customer. Center can then call or message to remind.</p>
-                        <div class="button"><a href="https://www.amazon.in/Aykara4-Vehicle-Pollution-Reminder/dp/B07XL1DBY2/ref=sr_1_1?crid=2B8GO1JETC5ZW&keywords=pollution&qid=1686588781&s=mobile-apps&sprefix=polluti%2Cmobile-apps%2C241&sr=1-1"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-
-                <div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Khaana Hai Makilcci</h2>
-                        <p>A blog for foodies. Share recipes, discuss food and much more.</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                        <h2>STB Robo</h2>
+                        <p>A modern robotics and automation company website showcasing industrial robotics solutions. Built with responsive design principles, featuring product catalogs, service offerings, and client testimonials. Implemented smooth animations and optimized performance for seamless user experience.</p>
+                        <div class="button"><a href="https://stbrobo.netlify.app/" target="_blank" rel="noopener noreferrer"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
 
                 <div class="portfolio portfolio-second">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-second.jpg" alt="portfolio-second">
+                        <img src="images/consult.jpg" alt="UpGrad Mentoring" loading="lazy">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Aayur Jeevak</h2>
-                        <p>A portfolio website for a Ayurvedic clinic.</p>
-                        <div class="button"><a href="https://aayurjeevak.com"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                        <h2>Software Engineering Mentor</h2>
+                        <p>Mentoring aspiring software developers at UpGrad, one of India's leading online education platforms. Providing technical guidance, code reviews, career counseling, and helping students transition into successful tech careers. Conducted 100+ mentoring sessions covering Java, Spring Boot, Kafka, Redis, Docker, Microservices, System Design, best practices in software engineering etc.</p>
+                        <div class="button"><a href="https://www.upgrad.com" target="_blank" rel="noopener noreferrer"><button><span class="index">View Platform<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                 <div class="portfolio portfolio-third">
+                     <div class="portfolio-image">
+                        <img src="images/portfolio-first.jpg" alt="Safer App Project" loading="lazy">
+                     </div>
+                     <div class="portfolio-text">
+                         <h2>Safer - Contact Tracing App</h2>
+                         <p>A pandemic-response application built for small businesses to digitally track customer visits. Replaced traditional pen-and-paper contact tracing with QR code scanning, enabling safer, touchless check-ins across multiple locations while meeting government regulations.</p>
+                         <div class="button"><a href="javascript:void(0)" onclick="alert('Project details coming soon!')"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                     </div>
+                 </div>
+
+                 <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-second.jpg" alt="Heritage Planet Project" loading="lazy">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Heritage Planet</h2>
+                        <p>A sophisticated e-commerce platform specializing in antiques and home decor. Features include product catalog management, secure payment processing, and responsive design for optimal shopping experience.</p>
+                        <div class="button"><a href="http://heritageplanet.com" target="_blank" rel="noopener noreferrer"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+             
+                <div class="portfolio portfolio-first">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-third.jpg" alt="Vehicle Pollution Reminder App" loading="lazy">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Vehicle Pollution Reminder</h2>
+                        <p>An Android application designed for vehicle pollution test centers to manage customer data and automate reminder notifications. Helps centers track expiry dates and proactively notify customers when their pollution certificates need renewal.</p>
+                        <div class="button"><a href="https://www.amazon.in/Aykara4-Vehicle-Pollution-Reminder/dp/B07XL1DBY2/" target="_blank" rel="noopener noreferrer"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-fourth.jpg" alt="Food Blog Project" loading="lazy">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Khaana Hai Makilcci</h2>
+                        <p>A vibrant food blog platform where culinary enthusiasts can share recipes, discuss cuisine trends, and connect with fellow food lovers. Features user-generated content, recipe categorization, and social engagement tools.</p>
+                        <div class="button"><a href="javascript:void(0)" onclick="alert('Project details coming soon!')"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
 
                 <div class="portfolio portfolio-third">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="portfolio-third">
+                        <img src="images/portfolio-second.jpg" alt="Aayur Jeevak Website" loading="lazy">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Aayur Jeevak</h2>
+                        <p>A professional portfolio website for an Ayurvedic clinic, featuring appointment booking system, treatment information, and patient resources. Built with focus on accessibility and user-friendly navigation.</p>
+                        <div class="button"><a href="https://aayurjeevak.com" target="_blank" rel="noopener noreferrer"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-third.jpg" alt="Travelogue App" loading="lazy">
                     </div>
                     <div class="portfolio-text">
                         <h2>Travelogue</h2>
-                        <p>A handy app for travellers. Collect photos, videos and write blog and tag them to the points on map. Share the same to other social media platforms.</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                        <p>A comprehensive travel companion app that lets users document their journeys with geotagged photos, videos, and blog entries. Features interactive maps, social sharing capabilities, and trip planning tools.</p>
+                        <div class="button"><a href="javascript:void(0)" onclick="alert('Project details coming soon!')"><button><span class="index">View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
 
             </div>
-                    <!--copyright-section You Can Remove After Downloading-->
-            <div class="footer">
-                <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> George Aykara
-                </div>
-               </div>
        <!--copyright-section-->
-             </div>
+             </section>
         <!--portfolio end-->
-        <!--blog-->
-        <div id="blog">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-        <div class="blog-header"> Blogs</span>
-            <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
-            <div class="blog-content">
-                 <div class="blogs">
-                     <a href="#">
-                     <div class="img">
-                        <img src="images/post-one.jpg" alt="blog-one">
-                        <div class="blog-date">8 May,20</div>
-                     </div>
-                     <div class="blog-text">
-                         <h3>Harleys In Hawaai</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo 
-                             veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
-                              libero.</p>
-                     </div></a>
-                 </div>      
-                 <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-two.jpg" alt="blog-two">
-                        <div class="blog-date">16 Jan,20</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Key To Be Productive</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, 
-                            recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur
-                             eius eligendi dolor magnam sit!</p>
-                    </div></a>
-                </div>      
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-three.jpg" alt="blog-three">
-                        <div class="blog-date">30 Nov,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Caffeine Addict</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit 
-                            ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas.
-                             Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
-                    </div></a>
-                </div>
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-four.jpg" alt="blog-four">
-                        <div class="blog-date">6 Jul,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
-                             quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis praesentium quae.
-                              Sed, quibusdam necessitatibus.</p>
-                    </div></a>
-                </div>  
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-five.jpg" alt="blog-five">
-                        <div class="blog-date">1 Jun,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Work From Home</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem 
-                            dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum, soluta hic minus 
-                            sint explicabo..</p>
-                    </div></a>
-                </div>  
-                <div class="blogs">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-six.jpg" alt="blog-six">
-                        <div class="blog-date">28 Feb,19</div>
-                    </div>
-                    <div class="blog-text">
-                        <h3>Business Trip</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde, 
-                            ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
-                    </div></a>
-                </div>        
-            </div>
-               <!--copyright-section You Can Remove After Downloading-->
-               <div class="footer">
-                <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> George Aykara
-                </div>
-               </div>
-       <!--copyright-section-->
-        </div>
-        <!--blog end-->
         <!--contact-->
-     <div id="contact">
+     <section id="contact">
         <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
+            <div class="color-panel" role="button" aria-label="Open color options" tabindex="0">
+                <img src="images/gear.png" alt="Settings">
             </div>
             <div class="color-selector">
                 <div class="heading">Custom Colors</div>
                 <div class="colors">
-                    <ul >
+                    <ul>
                     <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
+                        <a href="#0" class="color-red" title="color-red" aria-label="Red theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
+                        <a href="#0" class="color-purple" title="color-purple" aria-label="Purple theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
+                        <a href="#0" class="color-malt" title="color-malt" aria-label="Malt theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
+                        <a href="#0" class="color-green" title="color-green" aria-label="Green theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
+                        <a href="#0" class="color-blue" title="color-blue" aria-label="Blue theme"></a>
                     </li>
                     <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
+                        <a href="#0" class="color-orange" title="color-orange" aria-label="Orange theme"></a>
                     </li>
                     </ul>
                 </div>
             </div>
             </div>
-         <div class="contact-header">Contact <span class="color"> Me</span>
-        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
+         <div class="contact-header">
+            <h2>Contact <span class="color">Me</span></h2>
+        <div class="contact-header-caption"><span class="color">Get</span> In Touch.</div></div>
         <div class="contact-content">
-            <!--Contact form-->
-             <!-- <div class="contact-form">
-                 <div class="form-header">
-                     Message Me
-                 </div>
-                 <form id="myForm" action="#">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
-                    </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
-                 </form>
-               
-             </div> -->
-            <!--Contact form-->
             <!--Contact information-->
              <div class="contact-info">
                 <div class="contact-info-header">
@@ -654,33 +514,33 @@
                 </div>
                 <div class="contact-info-content">
                 <div class="contect-info-content-line">
-                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                    <img src="./images/icon-name.png" class="icon" alt="Name Icon">
                     <div class="contact-info-icon-text">
                         <h6>Name</h6>
                         <p>George Aykara</p>
                     </div>
                 </div>
                 <div class="contect-info-content-line">
-                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                  <img src="./images/icon-location.png" class="icon" alt="Location Icon">
                     <div class="contact-info-icon-text">
                         <h6>Location</h6>
-                        <p>Bangalore, India</p>
+                        <p>Bangalore | Kochi</p>
                     </div>
                 </div>
 
-                <a href="Tel:918547571854">
+                <a href="tel:+918547571854">
                     <div class="contect-info-content-line">
-                        <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                        <img src="./images/icon-phone.png" class="icon" alt="Phone Icon">
                         <div class="contact-info-icon-text">
                             <h6>Call</h6>
-                            <p>+91-854(7571)854</p>
+                            <p>+91-854-757-1854</p>
                         </div>
                     </div>
                 </a>
               
-                <a href="Mailto:george.aykara@outlook.com">
+                <a href="mailto:george.aykara@outlook.com">
                     <div class="contect-info-content-line">
-                        <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                        <img src="./images/icon-email.png" class="icon" alt="Email Icon">
                         <div class="contact-info-icon-text">
                             <h6>Email</h6>
                             <p>george.aykara@outlook.com</p>
@@ -688,38 +548,30 @@
                     </div>
                 </a>
               
-                <a href="https://www.linkedin.com/in/george-aykara/" target="_blank">
+                <a href="https://www.linkedin.com/in/george-aykara/" target="_blank" rel="noopener noreferrer">
                     <div class="contect-info-content-line">
-                        <img src="./images/linkedin logo.png" class="icon" alt="linkedin-icon">
+                        <img src="./images/linkedin logo.png" class="icon" alt="LinkedIn Icon">
                         <div class="contact-info-icon-text">
                             <h6>LinkedIn</h6>
                             <p>/in/george-aykara</p>
                         </div>
                     </div>
-                    </div>
                 </a>
               
-                <a href="https://aykara4.com" target="_blank">
+                <a href="https://aykara4.com" target="_blank" rel="noopener noreferrer">
                     <div class="contect-info-content-line">
-                        <img src="./images/aykara4-icon.png" class="icon" alt="linkedin-icon">
+                        <img src="./images/aykara4-icon.png" class="icon" alt="Aykara4 Icon">
                         <div class="contact-info-icon-text">
                             <h6>Aykara4</h6>
                             <p>Aykara4.com</p>
                         </div>
                     </div>
-                    </div>
                 </a>
+                </div>
             <!--Contact information end-->
            </div>
         </div>
-                    <!--copyright-section You Can Remove After Downloading-->
-                    <div class="footer">
-                        <div class="footer-text">
-                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> George Aykara
-                        </div>
-                       </div>
-               <!--copyright-section-->
-     </div>
+     </section>
         <!--contact end-->
     </div>
     <!--all the divisions-->
@@ -731,6 +583,5 @@
     <script>
   particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
     </script>
-
 </body>
 </html>
